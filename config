@@ -1,3 +1,32 @@
+! Created with element picker 
+
+! 2022-03-02 https://www.wired.com
+www.wired.com##.paywall-bar__expanded
+www.wired.com##.journey-template--paywall-bar.paywall-bar--expanded.paywall-bar-failsafe
+
+! 2022-03-04 https://www.newyorker.com
+www.newyorker.com##.paywall-bar__collapsed.paywall-bar--half.paywall-bar__wrapper
+
+! 2022-03-09 https://www.mozilla.org
+www.mozilla.org###outer-wrapper
+
+! 2022-03-29 https://www.hltv.org
+www.hltv.org##.featuredNewsContainer
+www.hltv.org##.latestNewsContainer
+www.hltv.org##.right2Col
+www.hltv.org##.newSidebar
+
+! 2022-03-30 https://www.newegg.com
+www.newegg.com##.has-side-banner.row > .row-side
+
+! 2022-04-01 https://www.hagerty.com
+www.hagerty.com##.box-dark.article-progress-bar
+
+! 2022-04-03 https://www.lenovo.com
+www.lenovo.com##.bottomStickyDock
+
+
+
 ! YOUTUBE
 ! Remove Shorts from sidebar (right above subscriptions)
 ! https://www.reddit.com/r/youtube/comments/tah6vm/ublock_origin_filter_to_remove_shorts_tab/
@@ -28,32 +57,3 @@ www.reddit.com##.happening-now
 
 ! 2022-04-12 https://www.reddit.com
 www.reddit.com##.pinned.pinnable-content
-
-
-
-! MISC
-
-! 2022-03-02 https://www.wired.com
-www.wired.com##.paywall-bar__expanded
-www.wired.com##.journey-template--paywall-bar.paywall-bar--expanded.paywall-bar-failsafe
-
-! 2022-03-04 https://www.newyorker.com
-www.newyorker.com##.paywall-bar__collapsed.paywall-bar--half.paywall-bar__wrapper
-
-! 2022-03-09 https://www.mozilla.org
-www.mozilla.org###outer-wrapper
-
-! 2022-03-29 https://www.hltv.org
-www.hltv.org##.featuredNewsContainer
-www.hltv.org##.latestNewsContainer
-www.hltv.org##.right2Col
-www.hltv.org##.newSidebar
-
-! 2022-03-30 https://www.newegg.com
-www.newegg.com##.has-side-banner.row > .row-side
-
-! 2022-04-01 https://www.hagerty.com
-www.hagerty.com##.box-dark.article-progress-bar
-
-! 2022-04-03 https://www.lenovo.com
-www.lenovo.com##.bottomStickyDock
