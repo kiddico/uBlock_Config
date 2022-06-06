@@ -1,0 +1,59 @@
+! YOUTUBE
+! Remove Shorts from sidebar (right above subscriptions)
+! https://www.reddit.com/r/youtube/comments/tah6vm/ublock_origin_filter_to_remove_shorts_tab/
+youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
+
+! Remove any video manually labeled by the user as being a short!
+! (requires # before to avoid accidental collisions with regular video titles)
+! https://www.reddit.com/r/uBlockOrigin/comments/m9znll/hide_youtube_shorts_from_video_lists/
+www.youtube.com##a#video-title[title~="#shorts"]:upward(5)
+www.youtube.com##a#video-title[title~="#Shorts"]:upward(5)
+www.youtube.com##a#video-title[title~="#short"]:upward(5)
+
+! Removes any video that's been categorized as a short by youtube
+! (Looks for "/shorts/" in the url)
+www.youtube.com##ytd-grid-video-renderer:has(a#video-title[href^="/shorts/"])
+
+! Banners, promos, garage sale signs, etc
+www.youtube.com##.ytp-paid-content-overlay
+||www.gstatic.com/youtube/img/promos/growth/f45ba4859d4e4c589e45f1296bace2f9f7068e888098e9b55d6ab8443fab6aa2_122x56.webp$image
+www.youtube.com##.ytd-rich-section-renderer.style-scope > .ytd-statement-banner-renderer.style-scope
+www.youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope
+
+
+
+! REDDIT garbage
+! 2022-04-04 https://www.reddit.com
+www.reddit.com##.happening-now
+
+! 2022-04-12 https://www.reddit.com
+www.reddit.com##.pinned.pinnable-content
+
+
+
+! MISC
+
+! 2022-03-02 https://www.wired.com
+www.wired.com##.paywall-bar__expanded
+www.wired.com##.journey-template--paywall-bar.paywall-bar--expanded.paywall-bar-failsafe
+
+! 2022-03-04 https://www.newyorker.com
+www.newyorker.com##.paywall-bar__collapsed.paywall-bar--half.paywall-bar__wrapper
+
+! 2022-03-09 https://www.mozilla.org
+www.mozilla.org###outer-wrapper
+
+! 2022-03-29 https://www.hltv.org
+www.hltv.org##.featuredNewsContainer
+www.hltv.org##.latestNewsContainer
+www.hltv.org##.right2Col
+www.hltv.org##.newSidebar
+
+! 2022-03-30 https://www.newegg.com
+www.newegg.com##.has-side-banner.row > .row-side
+
+! 2022-04-01 https://www.hagerty.com
+www.hagerty.com##.box-dark.article-progress-bar
+
+! 2022-04-03 https://www.lenovo.com
+www.lenovo.com##.bottomStickyDock
