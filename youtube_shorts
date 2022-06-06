@@ -1,0 +1,15 @@
+! Remove Shorts from sidebar (right above subscriptions)
+! https://www.reddit.com/r/youtube/comments/tah6vm/ublock_origin_filter_to_remove_shorts_tab/
+youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
+
+
+! Remove any video manually labeled by the user as being a short
+! (requires # before to avoid accidental collisions with regular video titles)
+! https://www.reddit.com/r/uBlockOrigin/comments/m9znll/hide_youtube_shorts_from_video_lists/
+www.youtube.com##a#video-title[title~="#shorts"]:upward(5)
+www.youtube.com##a#video-title[title~="#Shorts"]:upward(5)
+www.youtube.com##a#video-title[title~="#short"]:upward(5)
+
+! Removes any video that's been categorized as a short by youtube
+! (Looks for "/shorts/" in the url)
+www.youtube.com##ytd-grid-video-renderer:has(a#video-title[href^="/shorts/"])
