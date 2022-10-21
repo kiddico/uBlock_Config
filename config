@@ -30,7 +30,7 @@ www.lenovo.com##.bottomStickyDock
 ! YOUTUBE
 ! Remove Shorts from sidebar (right above subscriptions)
 ! https://www.reddit.com/r/youtube/comments/tah6vm/ublock_origin_filter_to_remove_shorts_tab/
-youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
+youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.1.guideEntryRenderer)
 
 ! Remove any video manually labeled by the user as being a short!
 ! (requires # before to avoid accidental collisions with regular video titles)
